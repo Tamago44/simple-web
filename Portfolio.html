@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+      <meta charset ="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/jpg" href="Image/Gicon.png">
+       <title>My Portfolio</title>  
+       <link rel = "stylesheet" href="style.css">
+       <!--Font -->
+       <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+        <div class = "hero-header">
+           <div class = "wrapper">
+                <header>
+                    <div class ="logo">
+                        <i class ="fa-solid fa-g"></i>
+                        <div class ="logo-text"> Godwin Tamayo</div>
+                    </div>
+                    <nav>
+                            <div class ="togglebtn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                
+                            </div>
+                            <ul class ="navlinks">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Portfolio</a></li>
+                                <li><a href="">Resume</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                    </nav>
+                </header>
+                <div class = "container">
+                      <div class = "hero-pic">
+                        <img src="Image/1.jpg" alt="Profile pic">
+                      </div>
+                      
+                      <div class="hero-text">
+                        <h5>Hi I'm <span class ="input">Computer Engineer</span></h5>
+                        <h1>Godwin Tamayo</h1>
+                        <p>Hello, I'm Godwin H. Tamayo, 20 years old and currently living at Consolacion Cebu City. I play guitar most often as my hobby and I am a  Computer Engineering student at Cebu Technological University - Danao Campus.
+                          Who just started to master the HTML,CSS, and JAVASCRIPT language. I'm willing to delve into the depths of challenges,hardworks and fun while making a bunch of projects 
+                           in order to become a Frontend Developer in the future.
+                          
+                        </p>
+                      
+
+                      <div class="btn-group">
+                            <a download href="./Image/CV.jpg" class="btn active">Download CV</a>
+                            <a href="" class="btn">Contact</a>
+                      </div>
+
+                      <div class="social">
+                        <a href ="https://www.facebook.com/Mose.craft" target ="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href ="https://www.linkedin.com/in/godwin-tamayo-037329236/" target ="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href ="https://www.instagram.com/tamago_desuuu/" target ="_blank"><i class="fa-brands fa-instagram"></i></a>
+                       
+                      </div>
+                    </div>
+            </div>
+      </div>
+    </div>
+    <!--typed js para sa typing text efffect-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    
+    <script>
+      /** para show og hide ang navbar sa babaw **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input",{
+          strings:[" Computer Engineer"," Frontend Developer"," Fingerstyle Guitarist"],
+          typedSpeed:70,
+          backSpeed:55,
+          loop:true
+        });
+    </script>
+</body>
+
+</html>
